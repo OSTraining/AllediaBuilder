@@ -655,8 +655,8 @@
                 <mkdir dir="${packages.tmp.path}/sources/wright/build"/>
             </then>
         </if>
-        <copy todir="${packages.tmp.path}/sources/less" overwrite="true">
-            <fileset dir="${packages.tmp.path}/less"/>
+        <copy todir="${packages.tmp.path}/sources/scss" overwrite="true">
+            <fileset dir="${packages.tmp.path}/scss"/>
         </copy>
         <if>
             <equals arg1="${wright.exists}" arg2="1"/>
