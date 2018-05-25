@@ -647,7 +647,7 @@
         <delete dir="${write.build.path}/node_modules"/>
         <!-- Copy builder LESS and all files to sources -->
         <mkdir dir="${packages.tmp.path}/sources"/>
-        <mkdir dir="${packages.tmp.path}/sources/less"/>
+        <mkdir dir="${packages.tmp.path}/sources/scss"/>
         <if>
             <equals arg1="${wright.exists}" arg2="1"/>
             <then>
