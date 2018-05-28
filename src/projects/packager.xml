@@ -614,7 +614,7 @@
         <!-- Build the CSS and JS code -->
         <!-- Node.JS tasks for building the latest CSS and JS code -->
         <if>
-            <equals arg1="${wright.exists}" arg2="1"/>
+            <equals arg1="${project.is_wright}" arg2="1"/>
             <then>
                 <exec command="sh install.sh" logoutput="true" dir="${write.build.path}" returnProperty="returnValue"/>
             </then>
@@ -629,7 +629,7 @@
         </if>
 
         <if>
-            <equals arg1="${wright.exists}" arg2="1"/>
+            <equals arg1="${project.is_wright}" arg2="1"/>
             <then>
                 <exec command="node build.js" logoutput="true" dir="${write.build.path}" returnProperty="returnValue"/>
             </then>
