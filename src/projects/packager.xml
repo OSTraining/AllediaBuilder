@@ -649,7 +649,7 @@
         <mkdir dir="${packages.tmp.path}/sources"/>
         <mkdir dir="${packages.tmp.path}/sources/scss"/>
         <if>
-            <equals arg1="${project.is_wright}" arg2="1"/>
+            <equals arg1="${wright.exists}" arg2="1"/>
             <then>
                 <mkdir dir="${packages.tmp.path}/sources/wright"/>
                 <mkdir dir="${packages.tmp.path}/sources/wright/build"/>
@@ -659,7 +659,7 @@
             <fileset dir="${packages.tmp.path}/scss"/>
         </copy>
         <if>
-            <equals arg1="${project.is_wright}" arg2="1"/>
+            <equals arg1="${wright.exists}" arg2="1"/>
             <then>
                 <copy todir="${packages.tmp.path}/sources/wright/build" overwrite="true">
                     <fileset dir="${write.build.path}"/>
